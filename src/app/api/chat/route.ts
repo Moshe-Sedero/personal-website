@@ -1,6 +1,6 @@
 import { createGroq } from "@ai-sdk/groq"
-import { streamText } from "ai"
-import type { ModelMessage } from "ai"
+import { streamText, convertToModelMessages } from "ai"
+import type { UIMessage } from "ai"
 import { NextRequest } from "next/server"
 import { buildSystemPrompt } from "@/lib/system-prompt"
 import { isRateLimited } from "@/lib/rate-limit"
@@ -8,6 +8,13 @@ import { isRateLimited } from "@/lib/rate-limit"
 const groq = createGroq({
   apiKey: process.env.GROQ_API_KEY,
 })
+
+function getTextFromUIMessage(message: UIMessage): string {
+  return message.parts
+    .filter((p): p is { type: "text"; text: string } => p.type === "text")
+    .map((p) => p.text)
+    .join("")
+}
 
 export async function POST(req: NextRequest) {
   // Rate limiting
@@ -37,19 +44,18 @@ export async function POST(req: NextRequest) {
   }
 
   // Validate last message length
-  const lastMessage = messages[messages.length - 1]
-  if (
-    typeof lastMessage?.content === "string" &&
-    lastMessage.content.length > 500
-  ) {
+  const lastMessage = messages[messages.length - 1] as UIMessage
+  const lastMessageText = getTextFromUIMessage(lastMessage)
+  if (lastMessageText.length > 500) {
     return Response.json(
       { error: "Message too long. Please keep it under 500 characters." },
       { status: 413 }
     )
   }
 
-  // Window conversation history to last 6 messages
-  const recentMessages = messages.slice(-6) as ModelMessage[]
+  // Convert UIMessages to ModelMessages and window to last 6
+  const recentUIMessages = (messages as UIMessage[]).slice(-6)
+  const recentMessages = await convertToModelMessages(recentUIMessages)
 
   try {
     const result = streamText({
