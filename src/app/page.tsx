@@ -5,6 +5,7 @@ import { Experience } from "@/components/sections/Experience"
 import { Skills } from "@/components/sections/Skills"
 import { Contact } from "@/components/sections/Contact"
 import { Footer } from "@/components/Footer"
+import { ChatFloatingLink } from "@/components/chat/ChatFloatingLink"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <Contact />
       <Footer />
+      <ChatFloatingLink />
     </main>
   )
 }
