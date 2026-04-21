@@ -7,11 +7,11 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Moshe Sedero — Technical Project Manager",
+  title: "Moshe Sedero - Technical Project Manager",
   description:
     "Technical Project Manager with 14 years of experience across Automotive R&D and Space domains. Delivering complex technical projects end-to-end, from PoC to production.",
   openGraph: {
-    title: "Moshe Sedero — Technical Project Manager",
+    title: "Moshe Sedero - Technical Project Manager",
     description:
       "Technical Project Manager with 14 years of experience across Automotive R&D and Space domains.",
     type: "website",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Moshe Sedero — Technical Project Manager",
-    description: "Technical Project Manager — AV/ADAS, Cloud, AI",
+    title: "Moshe Sedero - Technical Project Manager",
+    description: "Technical Project Manager - AV/ADAS, Cloud, AI",
   },
 }
 
