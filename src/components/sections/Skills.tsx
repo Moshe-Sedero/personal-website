@@ -49,7 +49,7 @@ export function Skills() {
                     className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full border border-[var(--border)] text-[var(--muted)]"
                   >
                     {iconId && (
-                      <Icon icon={iconId} width={14} height={14} />
+                      <Icon icon={iconId} width={18} height={18} />
                     )}
                     {skill}
                   </span>
