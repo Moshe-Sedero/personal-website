@@ -15,23 +15,23 @@ export const experience: ExperienceEntry[] = [
   {
     company: "Cloud & AI Technical Development",
     context: "Self-Directed",
-    period: "June 2025 — Present",
+    period: "June 2025 - Present",
     roles: [
       {
         title: "Independent Technical Development",
-        period: "June 2025 — Present",
+        period: "June 2025 - Present",
         highlights: [
           "Designed AI-assisted development workflows orchestrating Claude, NotebookLM, Gemini, Lovable, and Claude Code. Authored SOPs, application specifications, and phased build plans, and directed agentic AI development from architecture through implementation, testing, and version control across multiple personal projects.",
-          "AWS cloud fundamentals — conceptual understanding of AWS Well-Architected Framework, networking, compute, containers, databases, and security architecture through structured self-study.",
-          "Configured Google Cloud Platform projects for Gemini API access — including API key management, billing setup, and usage monitoring via GCP dashboards.",
+          "AWS cloud fundamentals - conceptual understanding of AWS Well-Architected Framework, networking, compute, containers, databases, and security architecture through structured self-study.",
+          "Configured Google Cloud Platform projects for Gemini API access - including API key management, billing setup, and usage monitoring via GCP dashboards.",
         ],
       },
     ],
   },
   {
-    company: "General Motors (GM) — Technical Center Israel",
+    company: "General Motors (GM) - Technical Center Israel",
     context: "R&D hub for Autonomous Vehicle (AV) and Advanced Driver Assistance System (ADAS) technologies.",
-    period: "2021 — June 2025",
+    period: "2021 - June 2025",
     roles: [
       {
         title: "Technical Project Manager",
@@ -44,11 +44,11 @@ export const experience: ExperienceEntry[] = [
         ],
       },
       {
-        title: "Team Leader SimOps — Simulation Operations",
+        title: "Team Leader SimOps - Simulation Operations",
         period: "2022–2024",
         highlights: [
           "Led the Simulation Operations team (SimOps), bridged developers and engineering teams to drive simulation enablement and adoption among internal customers through training, documentation, and customer-facing support.",
-          "Agile methodology — Planned Sprints and Milestones, aligned priorities with management, defined DoDs, authored Stories, managed day-to-day activities, mentored and promoted the growth of my team members.",
+          "Agile methodology - Planned Sprints and Milestones, aligned priorities with management, defined DoDs, authored Stories, managed day-to-day activities, mentored and promoted the growth of my team members.",
           "Championed tools migration from local desktops to a cloud-hosted Web UI platform, eliminated key pain points for customers, boosted adoption by engineering teams, and significantly scaled customer productivity.",
           "Led release management of simulation packages and platform versions, created regression and acceptance test plans and authored release notes to ensure smooth, high-quality deployments.",
         ],
@@ -57,14 +57,14 @@ export const experience: ExperienceEntry[] = [
         title: "System Validation Engineer",
         period: "2021",
         highlights: [
-          "Collaborated with 50 US-based System Engineers, PMs and TPMs — designed and delivered simulation scenarios.",
+          "Collaborated with 50 US-based System Engineers, PMs and TPMs - designed and delivered simulation scenarios.",
         ],
       },
     ],
   },
   {
-    company: "Israel Aerospace Industries (IAI) — Space Division",
-    period: "2011 — 2021",
+    company: "Israel Aerospace Industries (IAI) - Space Division",
+    period: "2011 - 2021",
     roles: [
       {
         title: "Systems Engineer & Technical Operations Lead",
