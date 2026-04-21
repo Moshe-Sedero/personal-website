@@ -7,8 +7,9 @@ import { profile } from "@/data/profile"
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ]
 
@@ -35,7 +36,7 @@ export function Navbar() {
           ))}
           <Link
             href="/assistant"
-            className="text-sm px-3 py-1.5 rounded-md bg-[var(--accent)] text-white hover:bg-blue-600 transition-colors"
+            className="text-sm px-3 py-1.5 rounded-md bg-[var(--accent)] text-white hover:opacity-90 transition-colors"
           >
             Chat ↗
           </Link>

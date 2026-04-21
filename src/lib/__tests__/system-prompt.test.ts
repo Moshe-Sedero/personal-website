@@ -44,4 +44,10 @@ describe('buildSystemPrompt', () => {
     const prompt = buildSystemPrompt()
     expect(prompt.toLowerCase()).toContain('ignore')
   })
+
+  it('includes personal projects', () => {
+    const prompt = buildSystemPrompt()
+    expect(prompt).toContain('KCD2 Dice Game')
+    expect(prompt).toContain('Claude Code')
+  })
 })
