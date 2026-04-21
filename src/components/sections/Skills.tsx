@@ -46,7 +46,7 @@ export function Skills() {
                 return (
                   <span
                     key={skill}
-                    className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full border border-[var(--border)] text-[var(--muted)]"
+                    className="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)] hover:border-[var(--accent)] hover:text-[var(--foreground)] transition-colors"
                   >
                     {iconId && (
                       <Icon icon={iconId} width={18} height={18} />
