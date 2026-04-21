@@ -20,7 +20,7 @@ export function ChatFloatingLink() {
           setIsVisible(false)
           cycle()
         }, 10_000) // visible for 10s
-      }, 20_000) // hidden for 20s
+      }, 8_000) // hidden for 8s
     }
 
     cycle()
@@ -37,7 +37,7 @@ export function ChatFloatingLink() {
   return (
     <div className="fixed bottom-8 right-8 z-50">
       <Link href="/assistant" aria-label="Chat with Moshe's AI assistant">
-        <button className="group flex items-center gap-2 p-4 rounded-full shadow-lg bg-[var(--accent)] text-white hover:bg-blue-600 transition-colors">
+        <button className="group flex items-center gap-2 p-4 rounded-full shadow-lg bg-[var(--accent)] text-white hover:opacity-90 transition-colors">
           <MessageSquare size={20} />
           <span className="text-sm font-medium pr-1 hidden group-hover:inline-block">
             Ask my AI
