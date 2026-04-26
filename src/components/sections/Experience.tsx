@@ -1,4 +1,5 @@
 import { experience } from "@/data/experience"
+import { TiltCard } from "@/components/TiltCard"
 
 export function Experience() {
   return (
@@ -20,7 +21,7 @@ export function Experience() {
             </div>
             <div className="space-y-4">
               {entry.roles.map((role, j) => (
-                <div key={j} className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 hover:border-[var(--accent)] transition-colors">
+                <TiltCard key={j} className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 hover:border-[var(--accent)] transition-colors">
                   <div className="flex flex-wrap items-baseline gap-2 mb-4">
                     <h4 className="font-semibold text-[var(--foreground)]">{role.title}</h4>
                     <span className="text-xs text-[var(--muted)] bg-[var(--background)] px-2 py-0.5 rounded-full border border-[var(--border)]">
@@ -35,7 +36,7 @@ export function Experience() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </TiltCard>
               ))}
             </div>
           </div>

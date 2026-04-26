@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ExternalLink, Code2 } from "lucide-react"
 import { projects } from "@/data/projects"
+import { TiltCard } from "@/components/TiltCard"
 
 export function Projects() {
   return (
@@ -8,7 +9,7 @@ export function Projects() {
       <h2 className="text-2xl font-bold mb-10">Projects</h2>
       <div className={`grid gap-6 ${projects.length === 1 ? "max-w-2xl" : "sm:grid-cols-2"}`}>
         {projects.map((project) => (
-          <div
+          <TiltCard
             key={project.name}
             className="bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--accent)] transition-colors"
           >
@@ -81,7 +82,7 @@ export function Projects() {
                 )}
               </div>
             </div>
-          </div>
+          </TiltCard>
         ))}
       </div>
     </section>
