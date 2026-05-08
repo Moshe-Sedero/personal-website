@@ -4,6 +4,7 @@ import { About } from "@/components/sections/About"
 import { Skills } from "@/components/sections/Skills"
 import { Experience } from "@/components/sections/Experience"
 import { Projects } from "@/components/sections/Projects"
+import { Presentations } from "@/components/sections/Presentations"
 import { Contact } from "@/components/sections/Contact"
 import { Footer } from "@/components/Footer"
 import { ChatFloatingLink } from "@/components/chat/ChatFloatingLink"
@@ -18,6 +19,7 @@ export default function Home() {
       <AnimatedSection delay={0.05}><Skills /></AnimatedSection>
       <AnimatedSection delay={0.05}><Experience /></AnimatedSection>
       <AnimatedSection delay={0.05}><Projects /></AnimatedSection>
+      <AnimatedSection delay={0.05}><Presentations /></AnimatedSection>
       <AnimatedSection delay={0.05}><Contact /></AnimatedSection>
       <Footer />
       <ChatFloatingLink />
