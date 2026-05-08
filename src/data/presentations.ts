@@ -22,7 +22,7 @@ export const presentations: Presentation[] = [
     description: "Overview of satellite technology, orbital mechanics, and real-world space systems - from communication satellites to Earth observation missions.",
     audience: "General Audience",
     topics: ["Satellites", "Space Systems", "Orbital Mechanics", "Israel Aerospace Industries"],
-    pdfPath: "/Satellites.pdf",
+    pdfPath: "/satellites.pdf",
     date: "2024",
   },
 ]
