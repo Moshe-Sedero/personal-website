@@ -10,6 +10,14 @@ export interface Presentation {
 
 export const presentations: Presentation[] = [
   {
+    title: "ADAS & Autonomous Vehicles",
+    description: "Educational presentation delivered to high school students covering the fundamentals of Advanced Driver Assistance Systems, sensor fusion, and the road to full vehicle autonomy.",
+    audience: "High School Students",
+    topics: ["ADAS", "LiDAR", "Computer Vision", "Safety", "Autonomous Vehicles"],
+    pdfPath: "/adas-highschool.pdf",
+    date: "2024",
+  },
+  {
     title: "Satellites & Space Systems",
     description: "Overview of satellite technology, orbital mechanics, and real-world space systems - from communication satellites to Earth observation missions.",
     audience: "General Audience",
