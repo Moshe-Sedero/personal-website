@@ -15,7 +15,7 @@ export const presentations: Presentation[] = [
     audience: "High School Students",
     topics: ["ADAS", "LiDAR", "Computer Vision", "Safety", "Autonomous Vehicles"],
     pdfPath: "/adas-highschool.pdf",
-    date: "2024",
+    date: "2026",
   },
   {
     title: "Satellites & Space Systems",
@@ -23,6 +23,6 @@ export const presentations: Presentation[] = [
     audience: "General Audience",
     topics: ["Satellites", "Space Systems", "Orbital Mechanics", "Israel Aerospace Industries"],
     pdfPath: "/satellites.pdf",
-    date: "2024",
+    date: "2026",
   },
 ]
