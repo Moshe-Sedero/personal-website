@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Download, ExternalLink } from "lucide-react"
 import { presentations } from "@/data/presentations"
@@ -11,8 +12,19 @@ export function Presentations() {
         {presentations.map((p) => (
           <TiltCard
             key={p.title}
-            className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-6 space-y-4 hover:border-[var(--accent)] transition-colors"
+            className="bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--accent)] transition-colors"
           >
+            {p.thumbnailPath && (
+              <div className="aspect-video w-full relative">
+                <Image
+                  src={p.thumbnailPath}
+                  alt={`${p.title} thumbnail`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
+            <div className="p-6 space-y-4">
             <div className="flex items-center justify-between gap-3">
               <span className="text-xs px-2 py-0.5 rounded-full border border-[var(--accent)] text-[var(--accent)]">
                 {p.audience}
@@ -53,6 +65,7 @@ export function Presentations() {
                   Download PDF
                 </a>
               )}
+            </div>
             </div>
           </TiltCard>
         ))}

@@ -5,6 +5,7 @@ export interface Presentation {
   topics: string[]
   pdfPath?: string
   slidesUrl?: string
+  thumbnailPath?: string
   date?: string
 }
 
@@ -15,6 +16,7 @@ export const presentations: Presentation[] = [
     audience: "High School Students",
     topics: ["ADAS", "LiDAR", "Computer Vision", "Safety", "Autonomous Vehicles"],
     pdfPath: "/adas-highschool.pdf",
+    thumbnailPath: "/adas-highschool-card-thumbnail.png",
     date: "2026",
   },
   {
