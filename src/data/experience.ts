@@ -36,10 +36,11 @@ export const experience: ExperienceEntry[] = [
         title: "Technical Project Manager",
         period: "2024–2025",
         highlights: [
-          "Led the rollout of simulation-based synthetic-data pipeline from Proof-of-Concept (PoC) to production deployment, delivered 5,000+ ML training datasets across 6+ projects and 3 global locations.",
-          "Coordinated with dozens of stakeholders across engineering, product, program, and vendor; provided clear updates to Director-level leadership, ensured successful execution and alignment with project requirements and timelines.",
-          "Directed cloud migration pilots across compute clusters, improved user experience and pipeline reliability.",
-          "Transformed AI workflows to scalable self-service products, reduced team dependency and empowered customers. Built training and knowledge resources, led global workshops (20+), and enabled 8 developers to self-serve.",
+          "Owned end-to-end delivery of a simulation-based synthetic data pipeline from PoC to production - drove requirements, development, testing, and data delivery through to completion.",
+          "Coordinated across Perception, software development, cloud infrastructure, DevOps, product, and program teams - from individual developers to Director-level leadership - alongside external simulation software vendor management.",
+          "Delivered 5,000+ ML training datasets across 6 projects and 3 global locations, enabling perception model training.",
+          "Directed infrastructure migration pilots across compute clusters, improving pipeline reliability and user experience.",
+          "Transformed simulation workflows into scalable self-service products - reduced team dependency, built training and knowledge resources, led global workshops (20+), and enabled 8 developers to self-serve.",
         ],
       },
       {
