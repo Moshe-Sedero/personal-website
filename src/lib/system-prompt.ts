@@ -2,6 +2,7 @@ import { profile } from "@/data/profile"
 import { experience } from "@/data/experience"
 import { skills } from "@/data/skills"
 import { projects } from "@/data/projects"
+import { education } from "@/data/education"
 
 export function buildSystemPrompt(): string {
   const experienceText = experience
@@ -52,6 +53,9 @@ ${skillsText}
 ${projects.map((p) =>
   `${p.name}${p.builtWith ? ` (built with ${p.builtWith})` : ""}:\n  ${p.description}\n  Tech: ${p.techStack.join(", ")}\n  GitHub: ${p.githubUrl}\n${p.highlights.map((h) => `  - ${h}`).join("\n")}`
 ).join("\n\n")}
+
+--- EDUCATION ---
+${education.map((e) => `${e.degree} - ${e.institution}`).join("\n")}
 
 --- CONTACT ---
 Email: ${profile.email}
