@@ -21,9 +21,8 @@ export const experience: ExperienceEntry[] = [
         title: "Independent Technical Development",
         period: "June 2025 - Present",
         highlights: [
-          "Designed AI-assisted development workflows orchestrating Claude, NotebookLM, Gemini, Lovable, and Claude Code. Authored SOPs, application specifications, and phased build plans, and directed agentic AI development from architecture through implementation, testing, and version control across multiple personal projects.",
-          "AWS cloud fundamentals - conceptual understanding of AWS Well-Architected Framework, networking, compute, containers, databases, and security architecture through structured self-study.",
-          "Configured Google Cloud Platform projects for Gemini API access - including API key management, billing setup, and usage monitoring via GCP dashboards.",
+          "Designing and directing AI-assisted development workflows - leveraging Claude Code and multiple AI tools across personal projects from architecture to implementation, authoring SOPs, application specifications, and build plans.",
+          "Expanding technical foundation through AWS cloud fundamentals self-study - covering Well-Architected Framework, networking, compute, storage, containers, databases, and security architecture.",
         ],
       },
     ],
