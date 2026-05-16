@@ -44,13 +44,14 @@ export const experience: ExperienceEntry[] = [
         ],
       },
       {
-        title: "Team Leader SimOps - Simulation Operations",
+        title: "Simulation Operations Team Leader",
         period: "2022–2024",
         highlights: [
-          "Led the Simulation Operations team (SimOps), bridged developers and engineering teams to drive simulation enablement and adoption among internal customers through training, documentation, and customer-facing support.",
-          "Agile methodology - Planned Sprints and Milestones, aligned priorities with management, defined DoDs, authored Stories, managed day-to-day activities, mentored and promoted the growth of my team members.",
-          "Championed tools migration from local desktops to a cloud-hosted Web UI platform, eliminated key pain points for customers, boosted adoption by engineering teams, and significantly scaled customer productivity.",
-          "Led release management of simulation packages and platform versions, created regression and acceptance test plans and authored release notes to ensure smooth, high-quality deployments.",
+          "Led a 5-person Simulation Operations team - bridged simulation developers, infrastructure teams, and internal engineering customers to drive tool adoption through training, documentation, and customer-facing support.",
+          "Championed migration from local desktop tools to a cloud-hosted platform - eliminated key pain points, boosted adoption across engineering teams, and significantly scaled simulation capacity.",
+          "Led release management of simulation packages and platform versions - defined regression and acceptance test plans, authored release notes, and ensured smooth, high-quality deployments.",
+          "Served as primary vendor interface - managed feature requests, bug triage, and roadmap discussions; led make-or-buy evaluations and provided strategic recommendations to leadership.",
+          "Managed Agile sprints and milestones - aligned priorities with management, defined DoDs and authored stories.",
         ],
       },
       {
