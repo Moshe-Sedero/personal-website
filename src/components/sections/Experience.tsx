@@ -25,9 +25,11 @@ export function Experience() {
                   {role.title && (
                     <div className="flex flex-wrap items-baseline gap-2 mb-4">
                       <h4 className="font-semibold text-[var(--foreground)]">{role.title}</h4>
-                      <span className="text-xs text-[var(--muted)] bg-[var(--background)] px-2 py-0.5 rounded-full border border-[var(--border)]">
-                        {role.period}
-                      </span>
+                      {role.period && (
+                        <span className="text-xs text-[var(--muted)] bg-[var(--background)] px-2 py-0.5 rounded-full border border-[var(--border)]">
+                          {role.period}
+                        </span>
+                      )}
                     </div>
                   )}
                   <ul className="space-y-2.5">

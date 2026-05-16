@@ -10,8 +10,9 @@ const contactLinks = [
 
 export function Contact() {
   return (
-    <section id="contact" className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-      <h2 className="text-2xl font-bold mb-8">Contact</h2>
+    <section id="contact" className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+      <h2 className="text-2xl font-bold mb-3">Contact</h2>
+      <p className="text-sm text-[var(--muted)] mb-6">Open to new opportunities - feel free to reach out.</p>
       <div className="space-y-4">
         {contactLinks.map(({ label, href, icon: Icon, display }) => (
           <Link

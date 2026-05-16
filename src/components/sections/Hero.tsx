@@ -4,7 +4,7 @@ import { profile } from "@/data/profile"
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-4 sm:px-6 pt-24 pb-16">
+    <section className="flex flex-col justify-start max-w-5xl mx-auto px-4 sm:px-6 pt-32 pb-16">
       <div className="space-y-8 max-w-3xl">
         <div className="space-y-3">
           <p className="text-xs text-[var(--accent)] font-semibold tracking-[0.2em] uppercase">
