@@ -22,12 +22,14 @@ export function Experience() {
             <div className="space-y-4">
               {entry.roles.map((role, j) => (
                 <TiltCard key={j} className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 hover:border-[var(--accent)] transition-colors">
-                  <div className="flex flex-wrap items-baseline gap-2 mb-4">
-                    <h4 className="font-semibold text-[var(--foreground)]">{role.title}</h4>
-                    <span className="text-xs text-[var(--muted)] bg-[var(--background)] px-2 py-0.5 rounded-full border border-[var(--border)]">
-                      {role.period}
-                    </span>
-                  </div>
+                  {role.title && (
+                    <div className="flex flex-wrap items-baseline gap-2 mb-4">
+                      <h4 className="font-semibold text-[var(--foreground)]">{role.title}</h4>
+                      <span className="text-xs text-[var(--muted)] bg-[var(--background)] px-2 py-0.5 rounded-full border border-[var(--border)]">
+                        {role.period}
+                      </span>
+                    </div>
+                  )}
                   <ul className="space-y-2.5">
                     {role.highlights.map((h, k) => (
                       <li key={k} className="flex gap-3 text-sm text-[var(--muted)] leading-relaxed">

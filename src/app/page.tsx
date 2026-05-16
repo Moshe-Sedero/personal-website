@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
 import { Skills } from "@/components/sections/Skills"
 import { Experience } from "@/components/sections/Experience"
+import { Education } from "@/components/sections/Education"
 import { Projects } from "@/components/sections/Projects"
 import { Presentations } from "@/components/sections/Presentations"
 import { Contact } from "@/components/sections/Contact"
@@ -18,6 +19,7 @@ export default function Home() {
       <AnimatedSection><About /></AnimatedSection>
       <AnimatedSection delay={0.05}><Skills /></AnimatedSection>
       <AnimatedSection delay={0.05}><Experience /></AnimatedSection>
+      <AnimatedSection delay={0.05}><Education /></AnimatedSection>
       <AnimatedSection delay={0.05}><Projects /></AnimatedSection>
       <AnimatedSection delay={0.05}><Presentations /></AnimatedSection>
       <AnimatedSection delay={0.05}><Contact /></AnimatedSection>

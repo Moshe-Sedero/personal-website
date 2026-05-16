@@ -18,7 +18,7 @@ export const experience: ExperienceEntry[] = [
     period: "June 2025 - Present",
     roles: [
       {
-        title: "Independent Technical Development",
+        title: "",
         period: "June 2025 - Present",
         highlights: [
           "Designing and directing AI-assisted development workflows - leveraging Claude Code and multiple AI tools across personal projects from architecture to implementation, authoring SOPs, application specifications, and build plans.",
