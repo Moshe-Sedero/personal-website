@@ -68,13 +68,28 @@ export const experience: ExperienceEntry[] = [
     period: "2011 - 2021",
     roles: [
       {
-        title: "Systems Engineer & Technical Operations Lead",
+        title: "On-Orbit Operations & Systems Engineering",
         period: "2011–2021",
         highlights: [
-          "Technical owner for geostationary communications satellites; main engineering PoC for suppliers, customers, and cross-functional teams. Led anomaly resolution with data-driven mitigation plans with global specialists.",
-          "Led release management and end-to-end deployment of automation tools: defined requirements, coordinated development, supervised validation, and managed OTA production rollout.",
-          "Led a software acceptance testing team. Prepared Acceptance Test Procedures (ATP), mapped test suites to Software Requirements (SRS). Implemented requirements traceability and defect-tracking workflows.",
-          "Led in-sourcing of core activities from external vendor, establishing independent in-house capability.",
+          "Served as primary engineering authority for in-orbit geostationary communications satellites - main PoC for satellite owners, payload customers, hardware manufacturers, and cross-functional teams across multiple geographies.",
+          "Owned a multi-year high-stakes electrical power system anomaly - led sustained technical response including deep telemetry analysis, parameter prediction, and preventive action planning; coordinated with VP-level customer stakeholders and international manufacturer specialists.",
+          "Led development and deployment of a mission-critical automation tool - defined requirements, coordinated software development, supervised validation, and managed production rollout - ensuring continuous operational coverage during critical satellite periods with zero tolerance for failure.",
+          "Trained 100+ satellite operators; mentored junior engineers across the team.",
+        ],
+      },
+      {
+        title: "Satellite Orbital Management Lead",
+        period: "2011–2021",
+        highlights: [
+          "Led in-sourcing of orbital maneuver planning and analysis from an external Flight Dynamics team - established independent in-house capability from scratch.",
+          "Developed a data-driven optimization methodology for orbital maneuver planning - iteratively ran simulations, executed maneuvers, compared predicted vs. actual results - delivering measurable cost savings to the company.",
+        ],
+      },
+      {
+        title: "Software Acceptance Testing Team Leader",
+        period: "2011–2021",
+        highlights: [
+          "Led a software acceptance testing team - authored test procedures, mapped test coverage to software requirements, and implemented requirements traceability and defect-tracking workflows.",
         ],
       },
     ],
