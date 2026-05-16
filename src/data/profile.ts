@@ -1,8 +1,8 @@
 export const profile = {
   name: "Moshe Sedero",
-  title: "Technical Project Manager",
+  title: "Engineering Leader & Technical Project Manager",
   tagline:
-    "Technical Project Manager with 14 years of experience across Automotive R&D and Space domains, with a proven track record of delivering complex technical projects end-to-end, from PoC to production.",
+    "Engineering leader with 14 years of experience - technical project delivery at General Motors (GM) R&D center, and space systems engineering at Israel Aerospace Industries (IAI).",
   highlights: [
     "Combines deep engineering foundations with hands-on technical experience and strong project management skills.",
     "Experienced with Agile methodology and CI/CD workflows in software development environments - collaborated closely with software developers, Product, ML algorithm, DevOps and Cloud teams, external vendors, and global stakeholders at all levels, including senior leadership.",
