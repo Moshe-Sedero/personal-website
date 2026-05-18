@@ -23,6 +23,7 @@ const SKILL_ICONS: Record<string, string> = {
   "VS Code":          "logos:visual-studio-code",
   "PyCharm":          "logos:pycharm",
   // Generative AI
+  "Claude Code":      "simple-icons:anthropic",
   "Google AI Studio": "logos:google-gemini",
   "NotebookLM":       "logos:google-icon",
 }
@@ -49,7 +50,7 @@ export function Skills() {
                     className="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)] hover:border-[var(--accent)] hover:text-[var(--foreground)] transition-colors"
                   >
                     {iconId && (
-                      <Icon icon={iconId} width={18} height={18} />
+                      <Icon icon={iconId} width={22} height={22} />
                     )}
                     {skill}
                   </span>
