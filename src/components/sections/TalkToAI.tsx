@@ -12,14 +12,9 @@ export function TalkToAI() {
         }}
       >
         <h2 className="text-2xl font-bold">Talk to My AI</h2>
-        <div className="space-y-3 max-w-2xl mx-auto">
-          <p className="text-[var(--muted)] text-sm sm:text-base leading-relaxed">
-            {"I've built an AI assistant trained on my professional background - it can answer questions about my experience, how I've approached complex engineering problems, and what I'm working on now."}
-          </p>
-          <p className="text-[var(--muted)] text-sm sm:text-base leading-relaxed">
-            Ask it anything you would ask me in a first conversation.
-          </p>
-        </div>
+        <p className="text-[var(--muted)] text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+          {"I've built an AI assistant trained on my professional background. Give it a try 😊"}
+        </p>
         <Link
           href="/assistant"
           className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-[var(--accent)] text-white font-medium hover:opacity-90 transition-opacity"

@@ -51,7 +51,7 @@ ${skillsText}
 
 --- PERSONAL PROJECTS ---
 ${projects.map((p) =>
-  `${p.name}${p.builtWith ? ` (built with ${p.builtWith})` : ""}:\n  ${p.description}\n  Tech: ${p.techStack.join(", ")}\n  GitHub: ${p.githubUrl}\n${p.highlights.map((h) => `  - ${h}`).join("\n")}`
+  `${p.name}${p.builtWith ? ` (built with ${p.builtWith})` : ""}:\n  ${p.description}\n  Tech: ${p.techStack.join(", ")}${p.githubUrl ? `\n  GitHub: ${p.githubUrl}` : ""}\n${p.highlights.map((h) => `  - ${h}`).join("\n")}`
 ).join("\n\n")}
 
 --- EDUCATION ---

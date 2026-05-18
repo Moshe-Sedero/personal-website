@@ -32,46 +32,32 @@ export function Skills() {
     <section id="skills" className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
       <h2 className="text-2xl font-bold mb-8">Technical Skills</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {Object.entries(skills).map(([category, items]) => {
-          const isAI = category === "Generative AI & Agentic Tools"
-          return (
-            <div
-              key={category}
-              className="border border-[var(--border)] rounded-lg p-5 space-y-3"
-              style={{
-                background: isAI ? "rgba(20, 184, 64, 0.04)" : "var(--card)",
-              }}
-            >
-              <h3 className="text-sm font-semibold text-[var(--accent)] uppercase tracking-wide">
-                {category}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {(items as readonly string[]).map((skill) => {
-                  const iconId = SKILL_ICONS[skill]
-                  return (
-                    <span
-                      key={skill}
-                      className="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border transition-colors"
-                      style={{ borderColor: "var(--accent-40)", color: "var(--accent-40)" }}
-                    >
-                      {iconId && (
-                        <Icon icon={iconId} width={18} height={18} />
-                      )}
-                      {skill}
-                    </span>
-                  )
-                })}
-              </div>
+        {Object.entries(skills).map(([category, items]) => (
+          <div
+            key={category}
+            className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-5 space-y-3"
+          >
+            <h3 className="text-sm font-semibold text-[var(--accent)] uppercase tracking-wide">
+              {category}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {(items as readonly string[]).map((skill) => {
+                const iconId = SKILL_ICONS[skill]
+                return (
+                  <span
+                    key={skill}
+                    className="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border border-[var(--border)] text-[var(--muted)] hover:border-[var(--accent)] hover:text-[var(--foreground)] transition-colors"
+                  >
+                    {iconId && (
+                      <Icon icon={iconId} width={18} height={18} />
+                    )}
+                    {skill}
+                  </span>
+                )
+              })}
             </div>
-          )
-        })}
-      </div>
-
-      <div className="mt-8">
-        <p className="text-xs text-[var(--muted)] uppercase tracking-widest mb-3">Also Experienced In</p>
-        <p className="text-sm text-[var(--muted)]">
-          MATLAB · STK · Satellite Operations · Flight Dynamics · Systems Engineering · Simulation Platforms
-        </p>
+          </div>
+        ))}
       </div>
     </section>
   )

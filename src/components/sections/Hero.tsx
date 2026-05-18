@@ -35,9 +35,6 @@ export function Hero() {
                 {profile.name}
               </span>
             </h1>
-            <h2 className="text-lg sm:text-xl font-semibold text-[var(--foreground)] leading-snug">
-              {profile.heroTagline}
-            </h2>
             <p className="text-sm text-[var(--muted)] font-normal">
               {profile.heroSubTagline}
             </p>
