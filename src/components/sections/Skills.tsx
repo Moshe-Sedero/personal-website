@@ -18,7 +18,7 @@ const SKILL_ICONS: Record<string, string> = {
   "Python":           "logos:python",
   "Bash":             "logos:bash-icon",
   // Dev Tools
-  "GitHub":           "logos:github-icon",
+  "GitHub":           "simple-icons:github",
   "Bitbucket":        "logos:bitbucket",
   "VS Code":          "logos:visual-studio-code",
   "PyCharm":          "logos:pycharm",
