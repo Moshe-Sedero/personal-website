@@ -7,7 +7,7 @@ export function About() {
       <ul className="space-y-4">
         {profile.highlights.map((highlight, i) => (
           <li key={i} className="flex gap-3 text-[var(--muted)] leading-relaxed">
-            <span className="text-[var(--accent)] mt-1 flex-shrink-0">•</span>
+            <span className="mt-1 flex-shrink-0" style={{ color: "var(--accent-50)" }}>•</span>
             <span>{highlight}</span>
           </li>
         ))}

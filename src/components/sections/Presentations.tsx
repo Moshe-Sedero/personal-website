@@ -49,7 +49,8 @@ export function Presentations() {
                   href={(p.slidesUrl ?? p.pdfPath)!}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm hover:opacity-90 transition-opacity"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm hover:opacity-80 transition-opacity"
+                  style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
                 >
                   <ExternalLink size={15} />
                   View

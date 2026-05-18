@@ -14,7 +14,7 @@ export interface ExperienceEntry {
 export const experience: ExperienceEntry[] = [
   {
     company: "Cloud & AI Technical Development",
-    context: "Self-Directed",
+    context: "Independent - AI-Assisted Engineering & Cloud Development",
     period: "June 2025 - Present",
     roles: [
       {

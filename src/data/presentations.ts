@@ -25,6 +25,7 @@ export const presentations: Presentation[] = [
     audience: "General Audience",
     topics: ["Satellites", "Space Systems", "Orbital Mechanics", "Israel Aerospace Industries"],
     pdfPath: "/satellites.pdf",
+    thumbnailPath: "/Satellites_&_Space_Systems_Overview_presentation.png",
     date: "2026",
   },
 ]
