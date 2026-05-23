@@ -27,9 +27,6 @@ export function Hero() {
         {/* Text content */}
         <div className="flex-1 space-y-6">
           <div className="space-y-3">
-            <p className="text-xs text-[var(--accent)] font-semibold tracking-[0.2em] uppercase">
-              Available for new opportunities
-            </p>
             <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight leading-none">
               <span className="bg-gradient-to-r from-white via-white to-[var(--accent)] bg-clip-text text-transparent">
                 {profile.name}

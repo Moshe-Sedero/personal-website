@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 const stats = [
   { value: "14+", label: "Years of Engineering Experience" },
   { value: "5,000+", label: "ML Training Datasets Delivered" },
-  { value: "100+", label: "Satellite Operators Trained" },
+  { value: "20+", label: "Global Workshops Led" },
   { value: "3", label: "Global Engineering Locations" },
 ]
 
