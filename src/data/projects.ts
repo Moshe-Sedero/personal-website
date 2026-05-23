@@ -5,6 +5,7 @@ export interface Project {
   githubUrl?: string
   liveUrl?: string
   youtubeId?: string
+  imageUrl?: string
   highlights: string[]
   builtWith?: string
   badgeColor?: string
@@ -17,6 +18,7 @@ export const projects: Project[] = [
       "Recreation of the Kingdom Come: Deliverance 2 dice minigame (Farkle variant). Turn-based push-your-luck game with human vs AI opponent with strategic risk-based decision making.",
     techStack: ["React", "Vite", "TypeScript", "Tailwind CSS", "Vitest"],
     githubUrl: "https://github.com/Moshe-Sedero/kcd2-dice-game-Claude-Code",
+    imageUrl: "/DICE-Background.png",
     youtubeId: undefined,
     highlights: [
       "Full scoring engine covering all Farkle dice combinations",

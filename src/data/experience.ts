@@ -8,6 +8,7 @@ export interface ExperienceEntry {
   company: string
   context?: string
   period: string
+  images?: string[]
   roles: Role[]
 }
 
@@ -31,6 +32,7 @@ export const experience: ExperienceEntry[] = [
     company: "General Motors (GM) - Technical Center Israel",
     context: "R&D hub for Autonomous Vehicle (AV) and Advanced Driver Assistance System (ADAS) technologies.",
     period: "2021 - June 2025",
+    images: ["/Point-cloud.png", "/ML-pipeline.png"],
     roles: [
       {
         title: "Technical Project Manager",
@@ -66,6 +68,7 @@ export const experience: ExperienceEntry[] = [
   {
     company: "Israel Aerospace Industries (IAI) - Space Division",
     period: "2011 - 2021",
+    images: ["/Operator-desk.png"],
     roles: [
       {
         title: "On-Orbit Operations & Systems Engineering",

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { ExternalLink, Code2 } from "lucide-react"
 import { projects } from "@/data/projects"
@@ -13,6 +14,16 @@ export function Projects() {
             key={project.name}
             className="bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--accent)] transition-colors"
           >
+            {project.imageUrl && (
+              <div className="aspect-video w-full relative">
+                <Image
+                  src={project.imageUrl}
+                  alt={`${project.name} preview`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
             {project.youtubeId && (
               <div className="aspect-video w-full">
                 <iframe
