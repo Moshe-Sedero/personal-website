@@ -10,9 +10,9 @@ export function Hero() {
       <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
         {/* Photo - above text on mobile, right on desktop */}
         <div className="order-first lg:order-last flex-shrink-0">
-          <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40">
+          <div className="relative w-32 h-32 sm:w-36 sm:h-36 lg:w-48 lg:h-48">
             <Image
-              src="/Moshe_Sedero_Profile_Picture.png"
+              src="/Moshe-Hero-Profile-Picture.png"
               alt="Moshe Sedero"
               fill
               className="rounded-full object-cover"
