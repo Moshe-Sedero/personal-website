@@ -6,19 +6,21 @@ const stats = [
   { value: "14+", label: "Years of Engineering Experience" },
   { value: "5,000+", label: "ML Training Datasets Delivered" },
   { value: "20+", label: "Global Workshops Led" },
-  { value: "3", label: "Global Engineering Locations" },
+  { value: "6+", label: "Active Projects Delivered" },
+  { value: "100%", label: "Satellite Mission Success" },
+  { value: "5", label: "Team Members Led" },
 ]
 
 export function StatsRow() {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
       {stats.map((stat, i) => (
         <motion.div
           key={stat.label}
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 + i * 0.1, ease: "easeOut" }}
-          className="flex flex-col items-start lg:items-center lg:px-6 lg:border-r lg:border-[var(--border)] last:border-0"
+          className="flex flex-col items-start"
         >
           <span
             className="text-4xl lg:text-5xl font-extrabold leading-none"
