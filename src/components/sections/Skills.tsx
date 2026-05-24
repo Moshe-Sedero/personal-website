@@ -19,9 +19,7 @@ const SKILL_ICONS: Record<string, string> = {
   "Bash":             "logos:bash-icon",
   // Dev Tools
   "GitHub":           "simple-icons:github",
-  "Bitbucket":        "logos:bitbucket",
   "VS Code":          "logos:visual-studio-code",
-  "PyCharm":          "logos:pycharm",
   // Generative AI
   "Claude Code":      "simple-icons:anthropic",
   "Google AI Studio": "logos:google-gemini",
@@ -32,7 +30,7 @@ export function Skills() {
   return (
     <section id="skills" className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
       <h2 className="text-2xl font-bold mb-8">Technical Skills</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {Object.entries(skills).map(([category, items]) => (
           <div
             key={category}

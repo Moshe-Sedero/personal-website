@@ -1,6 +1,6 @@
 export const skills = {
   "Project Management": ["Agile", "Scrum", "CI/CD", "Release Management", "Jira", "Confluence"],
-  "DevOps & Cloud": ["Git", "Jenkins", "Docker", "Linux", "AWS"],
-  "Generative AI & Agentic Tools": ["Claude Code", "Lovable AI", "Google AI Studio", "NotebookLM"],
-  "Programming, Scripting & Dev Tools": ["Python", "Bash", "JSON", "YAML", "GitHub", "VS Code"],
+  "DevOps & Cloud": ["Git", "Docker", "Linux", "AWS", "GCP", "Jenkins"],
+  "Programming & Scripting": ["Python", "Bash", "JSON", "YAML"],
+  "Generative AI & Dev Tools": ["Claude Code", "Google AI Studio", "NotebookLM", "GitHub", "VS Code"],
 } as const
