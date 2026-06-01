@@ -12,11 +12,11 @@ export function Education() {
             key={i}
             className="bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--accent)] transition-colors"
           >
-            <div className="aspect-video w-full overflow-hidden">
+            <div className="w-full">
               <img
                 src="/aerospace_faculty_image.png"
                 alt="Aerospace Faculty"
-                className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
+                className="w-full h-auto opacity-80 hover:opacity-100 transition-opacity"
               />
             </div>
             <div className="flex items-start gap-4 p-6">
