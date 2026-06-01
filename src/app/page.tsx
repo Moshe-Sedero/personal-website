@@ -21,8 +21,8 @@ export default function Home() {
       <AnimatedSection delay={0.05}><Skills /></AnimatedSection>
       <AnimatedSection delay={0.05}><Experience /></AnimatedSection>
       <AnimatedSection delay={0.05}><Education /></AnimatedSection>
-      <AnimatedSection delay={0.05}><Projects /></AnimatedSection>
       <AnimatedSection delay={0.05}><TalkToAI /></AnimatedSection>
+      <AnimatedSection delay={0.05}><Projects /></AnimatedSection>
       <AnimatedSection delay={0.05}><Presentations /></AnimatedSection>
       <AnimatedSection delay={0.05}><Contact /></AnimatedSection>
       <Footer />
