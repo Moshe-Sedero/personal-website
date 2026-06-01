@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { GraduationCap } from "lucide-react"
 import { education } from "@/data/education"
 import { TiltCard } from "@/components/TiltCard"
@@ -13,12 +12,11 @@ export function Education() {
             key={i}
             className="bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--accent)] transition-colors"
           >
-            <div className="relative aspect-video w-full">
-              <Image
+            <div className="aspect-video w-full overflow-hidden">
+              <img
                 src="/aerospace_faculty_image.png"
                 alt="Aerospace Faculty"
-                fill
-                className="object-cover opacity-80 hover:opacity-100 transition-opacity"
+                className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
               />
             </div>
             <div className="flex items-start gap-4 p-6">
