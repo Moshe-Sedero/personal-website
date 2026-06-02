@@ -44,40 +44,30 @@ export function Experience() {
                 const key = `${entry.company}-${j}`
                 const isOpen = expanded[key] ?? false
                 return (
-                  <TiltCard key={j} className="bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--accent)] transition-colors">
-                    <div
-                      className={`flex items-center justify-between gap-2 cursor-pointer p-5 ${isOpen && !role.image ? "pb-4" : ""}`}
-                      onClick={() => toggle(key)}
-                      aria-expanded={isOpen}
-                      role="button"
-                    >
-                      <div className="flex flex-wrap items-baseline gap-2">
-                        {role.title && (
-                          <h4 className="font-semibold text-[var(--foreground)]">{role.title}</h4>
-                        )}
-                        {role.period && (
-                          <span className="text-xs text-[var(--muted)] bg-[var(--background)] px-2 py-0.5 rounded-full border border-[var(--border)]">
-                            {role.period}
-                          </span>
-                        )}
+                  <div key={j}>
+                    <TiltCard className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 hover:border-[var(--accent)] transition-colors">
+                      <div
+                        className={`flex items-center justify-between gap-2 cursor-pointer ${isOpen ? "mb-4" : ""}`}
+                        onClick={() => toggle(key)}
+                        aria-expanded={isOpen}
+                        role="button"
+                      >
+                        <div className="flex flex-wrap items-baseline gap-2">
+                          {role.title && (
+                            <h4 className="font-semibold text-[var(--foreground)]">{role.title}</h4>
+                          )}
+                          {role.period && (
+                            <span className="text-xs text-[var(--muted)] bg-[var(--background)] px-2 py-0.5 rounded-full border border-[var(--border)]">
+                              {role.period}
+                            </span>
+                          )}
+                        </div>
+                        <span className="text-[var(--muted)] flex-shrink-0">
+                          {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        </span>
                       </div>
-                      <span className="text-[var(--muted)] flex-shrink-0">
-                        {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-                      </span>
-                    </div>
-                    {isOpen && (
-                      <>
-                        {role.image && (
-                          <div className="relative aspect-video w-full border-t border-[var(--border)]">
-                            <Image
-                              src={role.image}
-                              alt={`${role.title} visual`}
-                              fill
-                              className="object-cover opacity-80 hover:opacity-100 transition-opacity"
-                            />
-                          </div>
-                        )}
-                        <ul className="space-y-2.5 p-5 pt-4">
+                      {isOpen && (
+                        <ul className="space-y-2.5">
                           {role.highlights.map((h, k) => (
                             <li key={k} className="flex gap-3 text-sm text-[var(--muted)] leading-relaxed">
                               <span className="flex-shrink-0 mt-0.5" style={{ color: "var(--accent-50)" }}>▸</span>
@@ -85,9 +75,19 @@ export function Experience() {
                             </li>
                           ))}
                         </ul>
-                      </>
+                      )}
+                    </TiltCard>
+                    {role.image && (
+                      <div className="relative aspect-video mt-3 rounded-lg overflow-hidden border border-[var(--border)]">
+                        <Image
+                          src={role.image}
+                          alt={`${role.title} visual`}
+                          fill
+                          className="object-cover opacity-80 hover:opacity-100 transition-opacity"
+                        />
+                      </div>
                     )}
-                  </TiltCard>
+                  </div>
                 )
               })}
             </div>
