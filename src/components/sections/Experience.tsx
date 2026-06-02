@@ -39,6 +39,21 @@ export function Experience() {
               )}
             </div>
 
+            {entry.images && entry.images.length > 0 && (
+              <div className={`grid gap-3 mb-5 ${entry.images.length === 1 ? "grid-cols-1 max-w-sm" : "grid-cols-2"}`}>
+                {entry.images.map((src, k) => (
+                  <div key={k} className="relative aspect-video rounded-lg overflow-hidden border border-[var(--border)]">
+                    <Image
+                      src={src}
+                      alt={`${entry.company} visual ${k + 1}`}
+                      fill
+                      className="object-cover opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+
             <div className="space-y-4">
               {entry.roles.map((role, j) => {
                 const key = `${entry.company}-${j}`
@@ -78,13 +93,15 @@ export function Experience() {
                       )}
                     </TiltCard>
                     {role.image && (
-                      <div className="relative aspect-video mt-3 rounded-lg overflow-hidden border border-[var(--border)]">
-                        <Image
-                          src={role.image}
-                          alt={`${role.title} visual`}
-                          fill
-                          className="object-cover opacity-80 hover:opacity-100 transition-opacity"
-                        />
+                      <div className="max-w-sm mt-3">
+                        <div className="relative aspect-video rounded-lg overflow-hidden border border-[var(--border)]">
+                          <Image
+                            src={role.image}
+                            alt={`${role.title} visual`}
+                            fill
+                            className="object-cover opacity-80 hover:opacity-100 transition-opacity"
+                          />
+                        </div>
                       </div>
                     )}
                   </div>
