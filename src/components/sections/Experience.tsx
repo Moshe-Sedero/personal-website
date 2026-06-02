@@ -40,7 +40,7 @@ export function Experience() {
             </div>
 
             {entry.images && entry.images.length > 0 && (
-              <div className={`grid gap-3 mb-5 ${entry.images.length === 1 ? "grid-cols-1 max-w-sm" : "grid-cols-2"}`}>
+              <div className={`grid gap-3 mb-5 ${entry.images.length === 1 ? "grid-cols-1 max-w-sm md:max-w-2xl" : "grid-cols-2"}`}>
                 {entry.images.map((src, k) => (
                   <div key={k} className="relative aspect-video rounded-lg overflow-hidden border border-[var(--border)]">
                     <Image
@@ -93,7 +93,7 @@ export function Experience() {
                       )}
                     </TiltCard>
                     {role.image && (
-                      <div className="max-w-sm mt-3">
+                      <div className="max-w-sm md:max-w-2xl mt-3">
                         <div className="relative aspect-video rounded-lg overflow-hidden border border-[var(--border)]">
                           <Image
                             src={role.image}
