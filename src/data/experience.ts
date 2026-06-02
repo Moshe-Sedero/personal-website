@@ -2,6 +2,7 @@ export interface Role {
   title: string
   period: string
   highlights: string[]
+  image?: string
 }
 
 export interface ExperienceEntry {
@@ -32,11 +33,11 @@ export const experience: ExperienceEntry[] = [
     company: "General Motors (GM) - Technical Center Israel",
     context: "R&D hub for Autonomous Vehicle (AV) and Advanced Driver Assistance System (ADAS) technologies.",
     period: "2021 - June 2025",
-    images: ["/Point-cloud.png", "/ML-pipeline.png"],
     roles: [
       {
         title: "Technical Project Manager",
         period: "2024–2025",
+        image: "/ML-pipeline.png",
         highlights: [
           "Owned end-to-end delivery of a simulation-based synthetic data pipeline from PoC to production - drove requirements, development, testing, and data delivery through to completion.",
           "Coordinated across Perception, software development, cloud infrastructure, DevOps, product, and program teams - from individual developers to Director-level leadership - alongside external simulation software vendor management.",
@@ -48,6 +49,7 @@ export const experience: ExperienceEntry[] = [
       {
         title: "Simulation Operations Team Leader",
         period: "2022–2024",
+        image: "/Point-cloud.png",
         highlights: [
           "Led a 5-person Simulation Operations team - bridged simulation developers, infrastructure teams, and internal engineering customers to drive tool adoption through training, documentation, and customer-facing support.",
           "Championed migration from local desktop tools to a cloud-hosted platform - eliminated key pain points, boosted adoption across engineering teams, and significantly scaled simulation capacity.",

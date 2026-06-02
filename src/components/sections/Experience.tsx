@@ -39,29 +39,14 @@ export function Experience() {
               )}
             </div>
 
-            {entry.images && entry.images.length > 0 && (
-              <div className={`grid gap-3 mb-5 ${entry.images.length === 1 ? "grid-cols-1 max-w-sm" : "grid-cols-2"}`}>
-                {entry.images.map((src, k) => (
-                  <div key={k} className="relative aspect-video rounded-lg overflow-hidden border border-[var(--border)]">
-                    <Image
-                      src={src}
-                      alt={`${entry.company} visual ${k + 1}`}
-                      fill
-                      className="object-cover opacity-80 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
-
             <div className="space-y-4">
               {entry.roles.map((role, j) => {
                 const key = `${entry.company}-${j}`
                 const isOpen = expanded[key] ?? false
                 return (
-                  <TiltCard key={j} className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 hover:border-[var(--accent)] transition-colors">
+                  <TiltCard key={j} className="bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--accent)] transition-colors">
                     <div
-                      className={`flex items-center justify-between gap-2 cursor-pointer ${isOpen ? "mb-4" : ""}`}
+                      className={`flex items-center justify-between gap-2 cursor-pointer p-5 ${isOpen && !role.image ? "pb-4" : ""}`}
                       onClick={() => toggle(key)}
                       aria-expanded={isOpen}
                       role="button"
@@ -81,14 +66,26 @@ export function Experience() {
                       </span>
                     </div>
                     {isOpen && (
-                      <ul className="space-y-2.5">
-                        {role.highlights.map((h, k) => (
-                          <li key={k} className="flex gap-3 text-sm text-[var(--muted)] leading-relaxed">
-                            <span className="flex-shrink-0 mt-0.5" style={{ color: "var(--accent-50)" }}>▸</span>
-                            <span>{h}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      <>
+                        {role.image && (
+                          <div className="relative aspect-video w-full border-t border-[var(--border)]">
+                            <Image
+                              src={role.image}
+                              alt={`${role.title} visual`}
+                              fill
+                              className="object-cover opacity-80 hover:opacity-100 transition-opacity"
+                            />
+                          </div>
+                        )}
+                        <ul className="space-y-2.5 p-5 pt-4">
+                          {role.highlights.map((h, k) => (
+                            <li key={k} className="flex gap-3 text-sm text-[var(--muted)] leading-relaxed">
+                              <span className="flex-shrink-0 mt-0.5" style={{ color: "var(--accent-50)" }}>▸</span>
+                              <span>{h}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
                     )}
                   </TiltCard>
                 )
