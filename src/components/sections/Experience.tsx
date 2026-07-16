@@ -77,8 +77,16 @@ export function Experience() {
                             </span>
                           )}
                         </div>
-                        <span className="text-[var(--muted)] flex-shrink-0">
-                          {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        <span
+                          className="flex items-center gap-1 flex-shrink-0 text-xs font-medium px-2.5 py-1 rounded-full border transition-colors"
+                          style={{
+                            color: "var(--accent)",
+                            borderColor: "var(--accent-40)",
+                            background: isOpen ? "var(--accent-40)" : "transparent",
+                          }}
+                        >
+                          {isOpen ? "Hide details" : "Show details"}
+                          {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                         </span>
                       </div>
                       {isOpen && (
